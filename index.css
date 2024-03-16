@@ -1,0 +1,126 @@
+*{
+    font-family: "poppins";
+  }
+  body{
+    background-color: rgb(1, 102, 68);
+  }
+  
+  .container{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    align-items: center;
+    background-color:azure;
+    width: fit-content;
+    height: 80%;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+  }
+  
+  input{
+    width: 204px;
+    margin-bottom: 15px;
+    text-align: center;
+    border-radius: 3px;
+    border: 1px solid black;
+  }
+  textarea{
+    text-align: center;
+    width: 206px;
+    border-radius: 3px;
+    border: 1px solid black;
+  }
+  
+   button{
+    background-color:burlywood;
+    font-family: "poppins";
+    font-size: 15px;
+    font-weight: 600;
+    width: 215px;
+    border: 1px dotted rgb(159, 91, 1);
+    border-radius: 5px;
+    margin-top: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+   }
+  
+  
+   .input-items {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    list-style-type: none;
+  }
+  
+  .item {
+    display: flex;
+    gap: 10px;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 4px #ccc;
+    border-radius: 0.4rem;
+    /* padding: 1rem; */
+    align-items: center;
+  
+  }
+  .delete {
+    color: red;
+    flex: 0;
+    /* flex-grow:1 ; */
+    /* width: 200px; */
+    /* background: transparent; */
+    transition: .2s ease-in-out 0s;
+  }
+  
+  .edit{
+      flex: 0;
+      transition: .2s ease-in-out 0s;
+      
+  }
+  
+  .edit:hover, .delete:hover{
+      box-shadow: 0 0 10px #ccc;
+      transform: scale(1.2);
+      border-radius: 15px;
+  }
+  
+  li {
+      flex: 2;
+    font-size: 1.2rem;
+    padding: 0 1rem;
+    list-style: none;
+  }
+  
+  .done{
+      text-decoration: line-through;
+      color: red;
+      opacity: 0.4;
+  }
+  
+  input, textarea {
+    /* display: block; */
+  /* flex: 1 2 auto; */
+  width: 70%;
+  border-radius: 0.2rem;
+  border: 1px solid #ccc;
+  border-radius: 13px;
+  padding: 0.1rem 3rem;
+  /* height: 100%; */
+  }
+  
+  input[type="text"]:focus, textarea:focus {
+  outline: none;
+  box-shadow: 0 0 4px #ccc;
+  }
+  
+  input[type="text"]:hover, textarea:hover {
+  box-shadow: 0 0 4px #ccc;
+  }
+  
+  input,
+  input::-webkit-input-placeholder, textarea {
+  font-size: 1rem;
+  line-height: 3;
+  }
+  
